@@ -2,7 +2,7 @@
 
 A comprehensive security audit of a vulnerable PiggyBank smart contract, demonstrating identification and remediation of critical vulnerabilities.
 
-## 📋 Assignment Overview
+## Assignment Overview
 
 This repository contains:
 1. **Original Vulnerable Contract** - Identifying security flaws
@@ -10,7 +10,7 @@ This repository contains:
 3. **Attack Contract** - Demonstrating exploitation of vulnerabilities
 4. **Security Analysis** - Comprehensive vulnerability assessment
 
-## 🚨 Vulnerabilities Identified
+## Vulnerabilities Identified
 
 ### Critical Vulnerabilities in `VulnerablePiggyBank.sol`:
 
@@ -29,7 +29,7 @@ This repository contains:
    - **Impact**: Compilation error
    - **Line**: `owner = msg.sender` (missing `;`)
 
-## 🔒 Security Fixes Implemented
+## Security Fixes Implemented
 
 ### `SecurePiggyBank.sol` Improvements:
 
@@ -63,7 +63,7 @@ This repository contains:
    - Withdrawal requests  
    - Transfer failures
 
-## ⚔️ Attack Demonstration
+## Attack Demonstration
 
 ### `SimpleAttacker.sol` Features:
 
@@ -77,7 +77,7 @@ This repository contains:
 3. All funds transferred to attacker contract
 4. Attacker can withdraw stolen funds
 
-## 🧪 Testing Instructions
+## Testing Instructions
 
 ### Deploy and Test in Remix IDE:
 
@@ -109,7 +109,7 @@ This repository contains:
    address(vulnerable).balance; // Returns 0 ETH
    ```
 
-## 🛡️ Security Best Practices Demonstrated
+## Security Best Practices Demonstrated
 
 ### Access Control Patterns:
 - Owner-only functions with modifiers
@@ -129,14 +129,14 @@ This repository contains:
 - Reduced attack surface
 - Failed transfer protection
 
-## 📊 Gas Optimization
+## Gas Optimization
 
 The secure contract includes several gas optimizations:
 - Efficient storage layout
 - Minimal external calls
 - Event-driven architecture for off-chain tracking
 
-## 🔍 Code Quality Features
+## Code Quality Features
 
 - **Comprehensive Documentation**: NatSpec comments throughout
 - **Clear Function Naming**: Self-documenting code
@@ -144,24 +144,24 @@ The secure contract includes several gas optimizations:
 - **Error Messages**: Descriptive failure reasons
 - **Modular Design**: Separation of concerns
 
-## 📈 Security Analysis Summary
+## Security Analysis Summary
 
 | Vulnerability | Severity | Original | Fixed | Attack Demo |
 |---------------|----------|----------|-------|-------------|
-| Access Control | Critical | ❌ | ✅ | ✅ |
-| Balance Tracking | High | ❌ | ✅ | N/A |
-| Failed Transfers | Medium | ❌ | ✅ | N/A |
-| Syntax Errors | Low | ❌ | ✅ | N/A |
+| Access Control | Critical | No | Yes | Yes |
+| Balance Tracking | High | No | Yes | N/A |
+| Failed Transfers | Medium | No | Yes | N/A |
+| Syntax Errors | Low | No | Yes | N/A |
 
-## 🎯 Assignment Requirements Met
+## Assignment Requirements Met
 
-✅ **Identify vulnerabilities** - Comprehensive analysis completed  
-✅ **Fix vulnerabilities** - Secure implementation provided  
-✅ **Custom attack function** - SimpleAttacker contract created  
-✅ **Call withdraw function** - Attack demonstrates exploitation  
-✅ **Submit repo link** - Professional GitHub repository  
+- **Identify vulnerabilities** - Comprehensive analysis completed  
+- **Fix vulnerabilities** - Secure implementation provided  
+- **Custom attack function** - SimpleAttacker contract created  
+- **Call withdraw function** - Attack demonstrates exploitation  
+- **Submit repo link** - Professional GitHub repository  
 
-## 🚀 Advanced Security Features
+## Advanced Security Features
 
 The secure implementation goes beyond basic fixes to include:
 - **Ownership transfer capability**
@@ -170,7 +170,7 @@ The secure implementation goes beyond basic fixes to include:
 - **Failed transaction recovery**
 - **Gas-efficient operations**
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 This audit demonstrates understanding of:
 - **Smart contract security principles**
@@ -180,7 +180,7 @@ This audit demonstrates understanding of:
 - **Attack vector analysis**
 - **Professional audit documentation**
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 The vulnerable contract and attack demonstration are for educational purposes only. Never deploy vulnerable contracts to mainnet or use attack contracts maliciously.
 
